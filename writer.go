@@ -211,6 +211,7 @@ func (w *Writer) CreateHeader(fh *FileHeader) (io.Writer, error) {
 	}
 
 	fh.Flags |= 0x8 // we will write a data descriptor
+	fh.Flags |= 0x800 // add utf-8 flag
 	// TODO(alex): Look at spec and see if these need to be changed
 	// when using encryption.
 	fh.CreatorVersion = fh.CreatorVersion&0xff00 | zipVersion20 // preserve compatibility byte

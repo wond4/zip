@@ -1,6 +1,6 @@
 This fork add support for Standard Zip Encryption.
 
-The work is based on https://github.com/alexmullins/zip
+The work is based on https://github.com/yeka/zip
 
 Available encryption:
 
@@ -27,7 +27,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/yeka/zip"
+	"github.com/wond4/zip"
 )
 
 func main() {
@@ -60,7 +60,7 @@ import (
 	"io/ioutil"
 	"log"
 
-	"github.com/yeka/zip"
+	"github.com/wond4/zip"
 )
 
 func main() {
